@@ -1,9 +1,13 @@
-﻿Console.Write("Введите длину массива: ");
-int len = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите минимальное число: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите максимальное число: ");
-int max = Convert.ToInt32(Console.ReadLine());
+﻿// Console.Write("Введите длину массива: ");
+// int len = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите минимальное число: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите максимальное число: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+int len = new Random().Next(1, 10);
+int min = -10;
+int max = 10;
 
 int[] rand = FillArray(len, min, max);
 PrintArray(rand);
