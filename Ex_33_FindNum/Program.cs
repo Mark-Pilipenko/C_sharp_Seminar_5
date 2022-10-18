@@ -17,9 +17,9 @@ PrintArray(rand);
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (FindNumber(rand, number)) Console.WriteLine($"Число {number} присутствует в этом массиве");
-else Console.WriteLine($"Число {number} не присутствует в этом массиве");
-
+string result = FindNumber(rand, number)? $"Число {number} присутствует в этом массиве" : 
+                                          $"Число {number} не присутствует в этом массиве";
+Console.WriteLine(result);
 
 int[] FillArray(int n, int min, int max)
 {
